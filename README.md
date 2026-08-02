@@ -1,0 +1,1 @@
+The data in this repository is derived from Wiki Name, licensed under CC BY-SA 4.0. Content was converted from the original Lua database to JSON. This repository and its contents remain licensed under CC BY-SA 4.0.
