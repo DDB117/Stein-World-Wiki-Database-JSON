@@ -2225,7 +2225,7 @@
     "File": "Box_1.png",
     "Link": "Quest Items#Bitterburg Supplies",
     "Name": "Bitterburg Supplies",
-    "Obtained": "[[Regions#marker_Bitterburg_Supplies|Bitterburg Ruins (zone)]]",
+    "Obtained": "[[Regions#marker_Bitterburg_Supplies|Bitterburg Ruins (East)]], [[Regions#marker_Bitterburg_Supplies_17|Bitterburg Ruins (North)]], [[Regions#marker_Bitterburg_Supplies_28|Bitterburg Ruins (West)]]",
     "Rarity": "c"
   },
   "Black Bunny Ears": {
@@ -2931,7 +2931,7 @@
     "File": "Poop.png",
     "Link": "Quest Items#Boar Poop",
     "Name": "Boar Poop",
-    "Obtained": "[[Regions#marker_Boar_Poop|Farshore Province (zone)]], [[Regions#marker_Boar_Poop|Unknown Fields]]",
+    "Obtained": "[[Regions#marker_Boar_Poop|Farshore Province (zone)]], [[Regions#marker_Boar_Poop_2|Unknown Fields]]",
     "Rarity": "c"
   },
   "Bolt": {
@@ -28426,7 +28426,7 @@
     "Flavor text": "A simple stone",
     "Link": "Quest Items#Handy Stone",
     "Name": "Handy Stone",
-    "Obtained": "[[Regions#marker_Handy_Stone|Mullong Borderlands]], [[Regions#marker_Handy_Stone|Geledur]]",
+    "Obtained": "[[Regions#marker_Handy_Stone_5|Mullong Borderlands]], [[Regions#marker_Handy_Stone|Geledur]]",
     "Rarity": "c"
   },
   "Harbinger of Dusk": {
@@ -36995,7 +36995,7 @@
     "File": "Egg.png",
     "Link": "Quest Items#Outdoor Egg",
     "Name": "Outdoor Egg",
-    "Obtained": "[[Regions#marker_Outdoor_Egg|Moonshine Pasture]], [[Regions#marker_Outdoor_Egg|Lavekawa Woodland]]",
+    "Obtained": "[[Regions#marker_Outdoor_Egg|Moonshine Pasture]], [[Regions#marker_Outdoor_Egg_14|Lavekawa Woodland]]",
     "Rarity": "c"
   },
   "Outlawed Reaver": {
@@ -37619,7 +37619,7 @@
     "File": "Berries_red.png",
     "Link": "Quest Items#Pepper Berries",
     "Name": "Pepper Berries",
-    "Obtained": "[[Regions#marker_Pepper_Berries|Windswept Fields]], [[Regions#marker_Pepper_Berries|Glynphyra's Forest]]",
+    "Obtained": "[[Regions#marker_Pepper_Berries_3|Windswept Fields]], [[Regions#marker_Pepper_Berries|Glynphyra's Forest]]",
     "Rarity": "c"
   },
   "Perfidy": {
@@ -45655,7 +45655,7 @@
     "File": "Rock_ore_1.png",
     "Link": "Quest Items#Skuolium",
     "Name": "Skuolium",
-    "Obtained": "[[Regions#marker_Skuolium|Gleaming Glades]], [[Regions#marker_Skuolium|Old East Mine]], [[Regions#marker_Skuolium|Old South Mine]]",
+    "Obtained": "[[Regions#marker_Skuolium|Gleaming Glades]], [[Regions#marker_Skuolium_2|Old East Mine]], [[Regions#marker_Skuolium_20|Old South Mine]]",
     "Rarity": "r"
   },
   "Sky Witch Hat": {
@@ -47794,7 +47794,7 @@
     "Flavor text": "Pretty heavy...",
     "Link": "Quest Items#Stone Ammunition",
     "Name": "Stone Ammunition",
-    "Obtained": "[[Regions#marker_Stone_Ammunition|Granite Mountains]], [[Regions#marker_Stone_Ammunition|Skywing Ravine]], [[Regions#marker_Stone_Ammunition|Oldhorn Mine]]",
+    "Obtained": "[[Regions#marker_Stone_Ammunition_6|Granite Mountains]], [[Regions#marker_Stone_Ammunition|Skywing Ravine]], [[Regions#marker_Stone_Ammunition_5|Oldhorn Mine]]",
     "Rarity": "c"
   },
   "Stone Baton": {
@@ -48498,7 +48498,7 @@
     "Flavor text": "The shirt stinks bad",
     "Link": "Quest Items#Sweaty Shirt",
     "Name": "Sweaty Shirt",
-    "Obtained": "[[Regions#marker_Sweaty_Shirt|Geledur]], [[Regions#marker_Sweaty_Shirt|Royal Bears Barracks]]",
+    "Obtained": "[[Regions#marker_Sweaty_Shirt|Geledur]], [[Regions#marker_Sweaty_Shirt_8|Royal Bears Barracks]]",
     "Rarity": "c"
   },
   "Swimming in Life": {
@@ -50243,7 +50243,7 @@
     "File": "Mouse_trap.png",
     "Link": "Quest Items#Trapped Rat",
     "Name": "Trapped Rat",
-    "Obtained": "[[Regions#marker_Trapped_Rat|Farshore]], [[Regions#marker_Trapped_Rat|Farshore Province (zone)]]",
+    "Obtained": "[[Regions#marker_Trapped_Rat|Farshore]], [[Regions#marker_Trapped_Rat_20|Farshore Province (zone)]]",
     "Rarity": "c"
   },
   "Traveler Backpack": {
@@ -50376,7 +50376,7 @@
     "File": "Rock_2.png",
     "Link": "Quest Items#Travertin Rocks",
     "Name": "Travertin Rocks",
-    "Obtained": "[[Regions#marker_Travertin_Rocks|Gleaming Glades]], [[Regions#marker_Travertin_Rocks|Old Flooded Mine]]",
+    "Obtained": "[[Regions#marker_Travertin_Rocks|Gleaming Glades]], [[Regions#marker_Travertin_Rocks_4|Old Flooded Mine]]",
     "Rarity": "c"
   },
   "Treachery": {
@@ -51105,7 +51105,7 @@
     "File": "Fruit_orange.png",
     "Link": "Quest Items#Urrurlic",
     "Name": "Urrurlic",
-    "Obtained": "[[Regions#marker_Urrurlic|Hillsrich Waters]], [[Regions#marker_Urrurlic|Gleaming Glades]]",
+    "Obtained": "[[Regions#marker_Urrurlic|Hillsrich Waters]], [[Regions#marker_Urrurlic_4|Gleaming Glades]]",
     "Rarity": "c"
   },
   "Ursa": {
@@ -51165,7 +51165,7 @@
     "File": "Berries_blue.png",
     "Link": "Quest Items#Utesbi Berries",
     "Name": "Utesbi Berries",
-    "Obtained": "[[Regions#marker_Utesbi_Berries|Moonshine Pasture]], [[Regions#marker_Utesbi_Berries|Lavekawa Fields]]",
+    "Obtained": "[[Regions#marker_Utesbi_Berries|Moonshine Pasture]], [[Regions#marker_Utesbi_Berries_2|Lavekawa Fields]]",
     "Rarity": "c"
   },
   "Valkyrie": {
