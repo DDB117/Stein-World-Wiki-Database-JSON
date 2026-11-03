@@ -1,6 +1,8 @@
 return {
     -- ↓ Insert new item information here ↓
 
+
+
 ----------LEGACY ITEMS (PRE-V 0.3.18 REWORK)----------
 
     ["Voidshard_legacy"]={
