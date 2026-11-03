@@ -20,6 +20,9 @@ import json
 import random
 import re
 import sys
+import time
+import urllib.error
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -27,6 +30,9 @@ from convert import convert
 
 HERE = Path(__file__).resolve().parent
 WIKI_RAW = 'https://wiki.stein.world/w/index.php?title={}&action=raw'
+WIKI_API = 'https://wiki.stein.world/w/api.php?'
+# Miraheze (the wiki host) blocks requests without a descriptive User-Agent that has contact info.
+USER_AGENT = 'SteinWikiDatabaseJSON/1.1 (https://github.com/DDB117/Stein-World-Wiki-Database-JSON) python-urllib'
 
 # wiki module -> (lua file, json file, test json file)
 DATABASES = {
@@ -51,13 +57,44 @@ SCRAMBLE = {
 NUMBER = re.compile(r'\d+(?:\.\d+)?')
 
 
-def download(module):
-    req = urllib.request.Request(WIKI_RAW.format(module), headers={'User-Agent': 'Stein-World-Wiki-Database-JSON updater'})
+def fetch(url):
+    req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
     with urllib.request.urlopen(req, timeout=60) as res:
-        text = res.read().decode('utf-8')
-    if not text.lstrip().startswith('return {'):
-        raise SystemExit(f'{module}: unexpected content from the wiki (starts with {text[:40]!r})')
-    return text.rstrip('\n') + '\n'
+        return res.read().decode('utf-8')
+
+
+def from_raw(module):
+    return fetch(WIKI_RAW.format(module))
+
+
+def from_api(module):
+    query = urllib.parse.urlencode({
+        'action': 'query', 'prop': 'revisions', 'titles': module, 'rvprop': 'content',
+        'rvslots': 'main', 'format': 'json', 'formatversion': '2',
+    })
+    data = json.loads(fetch(WIKI_API + query))
+    return data['query']['pages'][0]['revisions'][0]['slots']['main']['content']
+
+
+def download(module):
+    """Try the raw page, then the API, a few times each. Explain the failure if all fail."""
+    errors = []
+    for attempt in range(3):
+        for source in (from_raw, from_api):
+            try:
+                text = source(module)
+            except urllib.error.HTTPError as e:
+                body = e.read(300).decode('utf-8', 'replace').replace('\n', ' ')
+                errors.append(f'{source.__name__}: HTTP {e.code} (server: {e.headers.get("Server")}) {body!r}')
+                continue
+            except (urllib.error.URLError, TimeoutError, KeyError, IndexError, ValueError) as e:
+                errors.append(f'{source.__name__}: {e!r}')
+                continue
+            if text.lstrip().startswith('return {'):
+                return text.rstrip('\n') + '\n'
+            errors.append(f'{source.__name__}: unexpected content (starts with {text[:40]!r})')
+        time.sleep(10 * (attempt + 1))
+    raise SystemExit(f'{module}: could not download from the wiki:\n  ' + '\n  '.join(errors))
 
 
 def clean_field(name):
