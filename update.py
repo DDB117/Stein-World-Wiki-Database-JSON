@@ -11,8 +11,8 @@ Usage:
     python3 update.py            # update the files in this folder
     python3 update.py --check    # only report whether the wiki changed (exit 1 if it did)
 
-Only uses the Python standard library. Run by the GitHub Action in
-.github/workflows/update.yml, but works the same on your own computer.
+Only uses the Python standard library. Run it from a home connection: the wiki's
+Cloudflare protection blocks datacenter IPs such as GitHub Actions.
 """
 
 import hashlib

@@ -11,4 +11,11 @@ python3 update.py          # update the files
 python3 update.py --check  # only report what changed on the wiki
 ```
 
-A GitHub Action (`.github/workflows/update.yml`) runs it every day and commits only when the wiki changed. It can also be started by hand from the Actions tab. GitHub pauses scheduled runs after 60 days without any repo activity; it sends an email and one click re-enables it.
+To publish an update, run it on your own computer, then commit and push:
+
+```
+python3 update.py
+git add -A && git commit -m "Update from wiki" && git push
+```
+
+It has to run from a home connection: the wiki's Cloudflare protection blocks GitHub's servers ("Checking your connection" page), so a GitHub Action can't download it.
