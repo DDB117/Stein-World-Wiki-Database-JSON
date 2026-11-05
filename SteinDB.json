@@ -3105,7 +3105,7 @@
     "Category": "Tool",
     "Cooldown": "0.80",
     "File": "Shaman_t_1-5_d_a.png",
-    "Function": "[16-18]-[29-33] Water Damage (+15% Bonus)",
+    "Function": "[16-18]-[29-35] Water Damage (+15% Bonus)",
     "Level": "27",
     "Link": "Shaman (Water) Weapons#Bonesnapper",
     "Name": "Bonesnapper",
@@ -26926,7 +26926,6 @@
     "Armor": "[5-8]",
     "Binding": "1",
     "Category": "Hands",
-    "Critical Chance Rating": "[8-15]",
     "File": "Gloves_cloth_blue_2.png",
     "Level": "26",
     "Link": "Warlock (Soul) Armor#Gloves of Arcane Power",
@@ -26936,7 +26935,8 @@
     "Obtained": "[[Tailor#Gloves of Arcane Power|Crafting]]",
     "Points": "soul",
     "Rarity": "u",
-    "Selling value": "120"
+    "Selling value": "120",
+    "Soul Damage": "[8-15]"
   },
   "Gloves of Dark Malice": {
     "Amount of points": "1",
