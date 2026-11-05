@@ -28454,7 +28454,7 @@
     "Category": "Tool",
     "Cooldown": "0.80",
     "File": "Shaman_t_1-5_a.png",
-    "Function": "[9-10]-[18-19] Water Damage (+15% Bonus)",
+    "Function": "[9-10]-[16-19] Water Damage (+15% Bonus)",
     "Level": "20",
     "Link": "Shaman (Water) Weapons#Hard Hitter",
     "Name": "Hard Hitter",
@@ -33473,7 +33473,7 @@
     "Death Damage": "[13-14]",
     "File": "Legs_melee_t1.png",
     "Level": "20",
-    "Life": "[124-133]",
+    "Life": "[123-133]",
     "Link": "Fighter (Death) Armor#Legguards of Dark Nightmares",
     "Name": "Legguards of Dark Nightmares",
     "Obtained": "[[Mullong Garrison#Invigilator Jackson|Invigilator Jackson]]",
@@ -52457,7 +52457,7 @@
     "Obtained": "[[Mullong Garrison#Gugritt the Guard|Gugritt the Guard]]",
     "Points": "soul",
     "Rarity": "r",
-    "Selling value": "96"
+    "Selling value": "92"
   },
   "Warboots of Holy Might": {
     "Amount of points": "1",
