@@ -9388,6 +9388,21 @@
     "Rarity": "u",
     "Selling value": "96"
   },
+  "Feet of the Undying_legacy": {
+    "Armor": "8",
+    "Binding": "1",
+    "Category": "Feet",
+    "Critical Bonus Rating": "1",
+    "File": "Icon_feet_citizen_leather_black_2.png",
+    "Flavor text": "Legacy of Waldenbach",
+    "Level": "30",
+    "Mana": "86",
+    "Mana Regeneration": "1.4",
+    "Name": "Feet of the Undying",
+    "Obtained": "Trader Jediah [Not obtainable since v.0.3.18]",
+    "Rarity": "u",
+    "Selling value": "131"
+  },
   "Feral Skewer_legacy": {
     "Amount of points": "1",
     "Binding": "1",
